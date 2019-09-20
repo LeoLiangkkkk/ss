@@ -1,13 +1,13 @@
 # CentOS 7配置ss流程
 
 1.用root用户登录
-2.安装pip，执行命令
+2.安装python3，执行命令
 
-> yum install python-pip
+> yum install python3
 
 3.用pip安装shadowsocks，执行命令
 
-> pip install shadowsocks
+> pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip
 
 4.安装vim，执行命令
 
@@ -22,10 +22,10 @@
 ```json
 {
     "server":"0.0.0.0",
-    "server_port":8888, //自定义端口
+    "server_port":8888,//自定义端口
     "local_address":"127.0.0.1",
     "local_port":1080,
-    "password":"123456",//自定义密码，(注：自定义密码需要包在双引号里面，自定义端口不需要)
+    "password":"123456", //自定义密码，(注：自定义密码需要包在双引号里面，自定义端口不需要)
     "timeout":300,
     "method":"aes-256-cfb"
 }
