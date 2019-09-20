@@ -1,6 +1,6 @@
 # CentOS 7配置ss流程
 
-1.用root用户登录
+1.用root用户登录  
 2.安装python3，执行命令
 
 > yum install python3
