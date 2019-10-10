@@ -45,7 +45,7 @@
 
 > systemctl disable firewalld.service
 
-8.安装bbr加速
+8.安装bbr加速（貌似最新版本已经自带了，所以这一步也省了）
 
 - 下载安装脚本
 
