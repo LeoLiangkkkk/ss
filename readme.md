@@ -1,4 +1,4 @@
-# CentOS 7配置ss流程
+# CentOS 8配置ss流程
 
 1.用root用户登录  
 2.安装python3，执行命令
@@ -45,7 +45,7 @@
 
 > systemctl disable firewalld.service
 
-8.安装bbr加速（貌似最新版本已经自带了，所以这一步也省了）
+8.安装bbr加速（貌似centOS 8已经自带了，所以这一步也省了）
 
 - 下载安装脚本
 
