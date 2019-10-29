@@ -6,11 +6,7 @@
 
 > pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip
 
-3.安装vim，执行命令
-
-> yum install vim
-
-4.新建shadowsocks的配置文件，执行命令
+3.新建shadowsocks的配置文件，执行命令
 
 > vim ss.json
 
@@ -28,11 +24,11 @@
 }
 ```
 
-5.启动命令
+4.启动命令
 
 > ssserver -c ss.json -d start
 
-6.防火墙设置
+5.防火墙设置
 
 - 关闭防火墙
 
@@ -42,7 +38,7 @@
 
 > systemctl disable firewalld.service
 
-7.安装bbr加速（貌似centOS 8已经自带了，所以这一步也省了）
+6.安装bbr加速（貌似centOS 8已经自带了，所以这一步也省了）
 
 - 下载安装脚本
 
