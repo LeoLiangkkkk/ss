@@ -1,19 +1,16 @@
 # CentOS 8配置ss流程
 
 1.用root用户登录  
-2.安装python3，执行命令
 
-> yum install python3
-
-3.用pip安装shadowsocks，执行命令
+2.用pip安装shadowsocks，执行命令
 
 > pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip
 
-4.安装vim，执行命令
+3.安装vim，执行命令
 
 > yum install vim
 
-5.新建shadowsocks的配置文件，执行命令
+4.新建shadowsocks的配置文件，执行命令
 
 > vim ss.json
 
@@ -31,11 +28,11 @@
 }
 ```
 
-6.启动命令
+5.启动命令
 
 > ssserver -c ss.json -d start
 
-7.防火墙设置
+6.防火墙设置
 
 - 关闭防火墙
 
@@ -45,7 +42,7 @@
 
 > systemctl disable firewalld.service
 
-8.安装bbr加速（貌似centOS 8已经自带了，所以这一步也省了）
+7.安装bbr加速（貌似centOS 8已经自带了，所以这一步也省了）
 
 - 下载安装脚本
 
