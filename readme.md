@@ -1,4 +1,4 @@
-# CentOS 8配置ss流程
+# CentOS 8配置ss流程(python3)
 
 1.用root用户登录  
 
@@ -8,25 +8,25 @@
 
 3.新建shadowsocks的配置文件，执行命令
 
-> vim ss.json
+> vim /etc/ss.json
 
 输入以下内容
 
 ```json
 {
     "server":"0.0.0.0",
-    "server_port":8888,
+    "server_port":8888, //端口随意填，被封了就换一个
     "local_address":"127.0.0.1",
     "local_port":1080,
-    "password":"123456",
+    "password":"123456", //密码
     "timeout":300,
-    "method":"aes-256-cfb"
+    "method":"aes-256-cfb" //加密方式
 }
 ```
 
 4.启动命令
 
-> ssserver -c ss.json -d start
+> ssserver -c /etc/ss.json -d start
 
 5.防火墙设置
 
