@@ -38,7 +38,7 @@
 
 > systemctl disable firewalld.service
 
-6.安装bbr加速（貌似centOS 8已经自带了，所以这一步也省了）
+6.安装bbr加速（貌似centOS 8已经自带了，忽略这步）
 
 - 下载安装脚本
 
